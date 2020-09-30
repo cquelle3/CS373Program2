@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     
     vector<string> direction_path;
     
-    while(input_index < input.length()){
+    while(input_index < int(input.length())){
         
         char x1 = directions[0];
         char x2 = directions[1];
@@ -84,7 +84,7 @@ int main(int argc, char *argv[]) {
 
     direction_path.push_back(directions);
     
-    for(int i = 0; i < direction_path.size()-1; i++){
+    for(int i = 0; i < int(direction_path.size()-1); i++){
         cout << direction_path[i] << "->";
     }
     
